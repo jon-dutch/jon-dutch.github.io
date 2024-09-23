@@ -1,24 +1,74 @@
 {
-    "items": [
-      {
-        "title": "Introduction to AI",
-        "image": "https://www.jon-dutch.com/techlearn24/img/learningDojo.png",
-        "text": "Artificial Intelligence (AI) is revolutionizing various industries. From <a href='https://example.com/healthcare-ai'>healthcare</a> to finance, AI is making significant impacts. Learn more about the <strong>future of AI</strong> and its potential applications."
-      },
-      {
-        "title": "Web Development Trends",
-        "image": "https://www.jon-dutch.com/techlearn24/img/intellezy.png",
-        "text": "Stay up-to-date with the latest web development trends. Explore topics like <em>responsive design</em>, <a href='https://example.com/progressive-web-apps'>progressive web apps</a>, and <strong>serverless architecture</strong>."
-      },
-      {
-        "title": "Cybersecurity Essentials",
-        "image": "https://www.jon-dutch.com/techlearn24/img/betty.jpg",
-        "text": "Protect your digital assets with essential cybersecurity practices. Learn about <strong>encryption</strong>, <a href='https://example.com/two-factor-auth'>two-factor authentication</a>, and best practices for <em>secure coding</em>."
-      },
-      {
-        "title": "Data Science Fundamentals",
-        "image": "https://www.jon-dutch.com/techlearn24/img/artisan.jpeg",
-        "text": "Dive into the world of data science. Understand key concepts like <strong>machine learning</strong>, <em>data visualization</em>, and <a href='https://example.com/big-data-analytics'>big data analytics</a>."
-      }
-    ]
-  }
+  "items": [
+    {
+      "title": "Test Kitchen: TinyAward.com",
+      "image": "https://www.jon-dutch.com/techlearn24/img/tinyAward.png",
+      "text": "Ok, this one was cool. They have a free badging tool that, I'll be honest, really impressed me. In the live demo the rep managed to create a training badge in about 1-minute, complete with a quiz, graphics, OpenBadge API, etc... Everything! About a minute. Was really impressive and, as it is XML based, it can be integrated into most any platform, like Intellum, for instance… <br><strong><a href=\"https://tinyaward.com/Login.aspx?ReturnUrl=%2f\">TinyAward.com</a></strong>"
+    },
+    {
+      "title": "Test Kitchen: Well Said Labs",
+      "image": "https://www.jon-dutch.com/techlearn24/img/wellSaidLabs.jpg",
+      "text": "This is a narration tool like I have never seen or heard before. It was a truly impressive product and, I am going to say it, when paired with some of the other products I saw, could completely replace the need for trying to find people to narrate stuff for us. <br><strong><a href=\"https://wellsaidlabs.com/\">Well Said Labs</a></strong>"
+    },
+    {
+      "title": "Test Kitchen: Animaker",
+      "image": "https://www.jon-dutch.com/techlearn24/img/animaker.png",
+      "text": "This one has so much potential that I went ahead and signed us for a quick 30m demo call with them next Friday. Something happened with Calendly and it took my 9a time slot and turned it into an 8a time slot. Waiting for that to be fixed. Will forward link once I have it sorted out. As for the product, there are actually a few and of special interest to me/us are: Show, Vmaker, Steve.AI, and Animaker Subtitles. I watched some of the sample videos and... well... it's pretty slick and could really speed up our delivery. They can even produce Storyline-like videos, with embedded quizzes, all in there same suite of tools. <br><strong><a href=\"https://www.animaker.com/\">Animaker</a></strong>"
+    },
+    {
+      "title": "Test Kitchen: Podcasting",
+      "image": "https://www.jon-dutch.com/techlearn24/img/betty.jpg",
+      "text": "This one is less of a product and more of a type of guidance. Betty hosts a podcast. She talked about podcasting a bit. I believe I will actually be in another session with her tomorrow or Thursday. In any event she has a nice spin on things and a very structured approach to conceptualizing a podcast. I appreciated that and I am hoping to learn more from her in the coming days. She also suggested the fictional \"Case 63\" podcast as a good listen. <br><strong><a href=\"https://ifyouaskbetty.com/\" style=\"font-family: 'Dancing Script', cursive;\">ifyouaskbetty</a></strong>"
+    },
+    {
+      "title": "Extend Storyline Functionality with Simple JavaScript Snippets",
+      "image": "https://www.jon-dutch.com/techlearn24/img/learningDojo.png",
+      "text": "This was the first “real” session I attended and after this one I felt like it had already paid for the cost of admission in some ways. Jeff Batts is a Learning Experience Designer (I feel like I see a new job title in my future) for Amazon. He also created the page linked below, the <em>Learning Dojo</em> where he offers various learning technology trainings. <br>The topic he discussed and provided resources for at the conference was using JavaScript (JS) snippets in Articulate. This mostly centered around animating different elements, and he does this by making use of the same JS library that Articulate uses: <a href=\"https://gsap.com/\" >GSAP</a>. This is a very similar approach to the one I took in hacking our Tembo courses.<br> Jeff created a webpage (using AI) that hosts a number of <a href=\"https://learningdojo.ninja/javascript-snippets/\">premade JS snippets</a> that can be easily used in Storyline (and other locations). He has also outlined any variables that need to be created, and fields that can be edited to suit your needs. Great resource! <br><strong><a href=\"https://learningdojo.ninja/\">Learning Dojo</a></strong>"
+    },
+    {
+      "title": "KEYNOTE with Mairéad Pratschke: Generative Intelligence: Redefining Learning for the Age of AI",
+      "image": "https://www.jon-dutch.com/techlearn24/img/genAI.jpg",
+      "text": "This was an insightful overlay of Generative AI, as it pertains to the learning sector as well as the world writ large. I do feel I would be doing a bit of an injustice of trying to distill things down here, but the gist of it was that AI is here to stay and we will be better positioned if we accept this and move forward from that footing as opposed to battling with the entire idea in our heads. AI was a persistent and consistent theme and the whole conference and I actually avoided most of those sessions, except for one. At the end of the day we are beholden to MSF’s wills and desires on the topic, but I do feel better equipped to have a more focused conversation on the topic. Additionally, she wrote a book about the whole thing (Amazon link below).<br><strong><a href=\" https://www.amazon.com/Generative-Education-Pedagogies-Innovation-SpringerBriefs-ebook/dp/B0D9ZZCS9X/ref=mp_s_a_1_1?crid=3DWWGNRW115XM&dib=eyJ2IjoiMSJ9.xEN7DChyvsAiE_K_C6zFHQBziu61vzV25q3CuRkpzps.I_y5nHWqLKoWS6w1x9Ayda5c0awpYHeqF2v1JSCogHw&dib_tag=se&keywords=Generative+AI+and+Education%3A+Digital+Pedagogies%2C+Teaching+Innovation+and+Learning+Design&qid=1726674923&sprefix=generative+ai+and+education+digital+pedagogies%2C+teaching+innovation+and+learning+design%2Caps%2C334&sr=8-1\">Generative AI and Education: Digital Pedagogies, Teaching Innovation and Learning Design</a></strong>"
+    },
+    {
+      "title": "New Technology: Explore, Evaluate, and Implement",
+      "image": "https://www.jon-dutch.com/techlearn24/img/intellezy.png",
+      "text": "This was the only session that didn’t really “WoW” me (pun fully intended). I believe this was a case of the label on the package being written for a different audience. I did learn from it, but nothing innovative, per se. In some ways it was nice to see reinforcement of what we already do, with regards to researching and piloting new technologies.  A copy of their presentation is available in the resources section of this site.<br><strong><a href=\" https://www.intellezy.com/\">Intellezy</a></strong>"
+    },
+    {
+      "title": "Imposter Syndrome Steals Talent – Spot It and Stop It!",
+      "image": "https://www.jon-dutch.com/techlearn24/img/betty.jpg",
+      "text": "I wish I had taken more notes during this one (or any notes, for that matter). This was a really interactive and enjoyable session all about Imposter Syndrome. As it so happens the host of this session was Betty, again! While I may not have taken notes, what I do have is an entire video series that Betty has been producing all about this very topic.<br><strong><a href=\" https://ifyouaskbetty.com/imposter-syndrome/\">Imposter Syndrome</a></strong>"
+    },
+    {
+      "title": "Accessible Learning: From Making the Case to Making the Change",
+      "image": "https://www.jon-dutch.com/techlearn24/img/artisan.jpeg",
+      "text": "Another interactive session focused on creating accessible courses. The interactive component mostly revolved around a deck of custom cards (I have a set) where you choose a scenario and a character. The idea being, as a group, talk out how you would meet the needs of the scenario for the character you’ve drawn. As a group you talk through things in the hopes of collectively finding solutions. One of the pairings we had that stumped us, as an example, was:<ul><li><em>Scenario:</em> Develop a training media library</li><li><em>Character:</em> Nick who is autistic</li></ul><br>This pairing resulted in a pretty contradictory conversation in our group as we had two different points of reference among the group. One participant has a family member who doesn’t like videos at all, so they would never watch anything in the library, but they may read – so including transcripts was one solution. Another participant has a family member who loves watching videos, but would not watch anything longer than roughly 1 minute in length. It’s fair to say we didn’t come up with a solution for that one, but as with the WoW, the strength was all in the conversations.<br>In addition to the card game, the presenter also referenced a number of different guidelines and tools. I have outlined them in the resource section.<br><strong><a href=\"https://courses.artisanlearning.com/clients/Demo/AL-WCAG/index.html#/\">Artisan Learning</a></strong>"
+    },
+    {
+      "title": "Mind Over Megabytes: Navigating Digitally-induced Adult Learning Challenges",
+      "image": "https://www.jon-dutch.com/techlearn24/img/capio.png",
+      "text": ""
+    },
+    {
+      "title": "Keynote with Mona Chalabi: Rehumanizing Data for Better Understanding",
+      "image": "https://www.jon-dutch.com/techlearn24/img/monaChalabi.png",
+      "text": ""
+    },
+    {
+      "title": "A Practitioner’s Guide to Games, Gamification, and Serious Play",
+      "image": "https://www.jon-dutch.com/techlearn24/img/blueSky.png",
+      "text": ""
+    },
+    {
+      "title": "Developing Critical Thinking Skills Through Technology Partnerships",
+      "image": "https://www.jon-dutch.com/techlearn24/img/vanderbilt.png",
+      "text": ""
+    },
+    {
+      "title": "The Future of e-Learning is Here: Say Hello to Integrating ChatGPT and Storyline",
+      "image": "https://www.jon-dutch.com/techlearn24/img/artha.png",
+      "text": ""
+    }
+  ]
+}
