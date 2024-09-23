@@ -116,17 +116,18 @@
             width: 90%;
             height: 90%;
             display: flex;
+            flex-direction: row;
             position: relative;
             border-radius: 15px;
         }
         .modal-image {
-            flex-grow: 1;
+            flex: 1;
             background-size: cover;
             background-position: center;
             mask-image: linear-gradient(to right, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
         }
         .modal-text {
-            flex-grow: 3;
+            flex: 3;
             padding-left: 20px;
             overflow-y: auto;
             color: white;
@@ -178,6 +179,9 @@
             }
             .hamburger {
                 display: flex;
+            }
+            .modal-content {
+                flex-direction: column-reverse;
             }
         }
     </style>
