@@ -203,7 +203,7 @@
         const navbarLinks = document.querySelector('.navbar-links');
 
         // Fetch JSON data
-        fetch('content.json')
+        fetch('https://www.jon-dutch.com/techlearn24/content.json')
             .then(response => response.json())
             .then(data => {
                 data.items.forEach((item, index) => {
