@@ -2,22 +2,22 @@
     "items": [
       {
         "title": "Introduction to AI",
-        "image": "/img/learningDojo.png",
+        "image": "https://www.jon-dutch.com/techlearn24/img/learningDojo.png",
         "text": "Artificial Intelligence (AI) is revolutionizing various industries. From <a href='https://example.com/healthcare-ai'>healthcare</a> to finance, AI is making significant impacts. Learn more about the <strong>future of AI</strong> and its potential applications."
       },
       {
         "title": "Web Development Trends",
-        "image": "/img/intellezy.png",
+        "image": "https://www.jon-dutch.com/techlearn24/img/intellezy.png",
         "text": "Stay up-to-date with the latest web development trends. Explore topics like <em>responsive design</em>, <a href='https://example.com/progressive-web-apps'>progressive web apps</a>, and <strong>serverless architecture</strong>."
       },
       {
         "title": "Cybersecurity Essentials",
-        "image": "/img/betty.jpg",
+        "image": "https://www.jon-dutch.com/techlearn24/img/betty.jpg",
         "text": "Protect your digital assets with essential cybersecurity practices. Learn about <strong>encryption</strong>, <a href='https://example.com/two-factor-auth'>two-factor authentication</a>, and best practices for <em>secure coding</em>."
       },
       {
         "title": "Data Science Fundamentals",
-        "image": "/img/artisan.jpeg",
+        "image": "https://www.jon-dutch.com/techlearn24/img/artisan.jpeg",
         "text": "Dive into the world of data science. Understand key concepts like <strong>machine learning</strong>, <em>data visualization</em>, and <a href='https://example.com/big-data-analytics'>big data analytics</a>."
       }
     ]
