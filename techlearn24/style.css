@@ -127,13 +127,24 @@ body, html {
     color: #40E0D0;
     font-weight: bold;
 }
-.ref-link {
-    padding-top: 20px;
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
 }
-.ref-link a {
-    color: #40E0D0;
-    font-size: 1.5rem;
-    font-weight: bold;
+.nav-button {
+    background: none;
+    border: none;
+    color: #FF69B4;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 0;
+}
+.nav-button:disabled {
+    color: #666;
+    cursor: not-allowed;
 }
 .close {
     color: #FF69B4;
@@ -144,12 +155,21 @@ body, html {
     position: absolute;
     right: 20px;
     top: 10px;
+    margin-left: 10px;
 }
 .close:hover,
 .close:focus {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+}
+.ref-link {
+    padding-top: 20px;
+}
+.ref-link a {
+    color: #40E0D0;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 @media (max-width: 768px) {
     .navbar-links {
