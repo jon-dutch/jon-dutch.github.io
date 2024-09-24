@@ -135,8 +135,14 @@ body, html {
     color: #666;
     cursor: not-allowed;
 }
+.modal-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    mask-image: linear-gradient(to right, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+}
 .modal-text {
-    flex: 3;
+    flex: 1;
     padding-left: 20px;
     overflow-y: auto;
     color: white;
