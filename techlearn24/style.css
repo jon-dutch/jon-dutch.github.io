@@ -30,7 +30,7 @@ body, html {
 }
 .navbar-title {
     font-family: 'Protest Guerrilla', cursive;
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     font-weight: bold;
     background: linear-gradient(to bottom, #40E0D0, #8A2BE2);
     background-clip: text;
