@@ -1,0 +1,177 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #111;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+.navbar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: white;
+}
+.navbar-title {
+    font-family: 'Protest Guerrilla', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #40E0D0, #8A2BE2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar-links {
+    display: flex;
+}
+.navbar-links a {
+    color: #FF69B4;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 60px; /* Add space for fixed navbar */
+}
+.card {
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+.card-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+.card-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+}
+.modal-content {
+    background-color: rgba(0,0,0,0.8);
+    margin: 2.5% auto;
+    padding: 20px;
+    border: 1px solid #FF69B4;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border-radius: 15px;
+}
+.modal-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    mask-image: linear-gradient(to right, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+}
+.modal-text {
+    flex: 3;
+    padding-left: 20px;
+    overflow-y: auto;
+    color: white;
+}
+.modal-text a {
+    color: #40E0D0;
+    font-weight: bold;
+}
+.ref-link {
+    padding-top: 20px;
+}
+.ref-link a {
+    color: #40E0D0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.close {
+    color: #FF69B4;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #111;
+        padding: 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .navbar-links a {
+        margin: 0.5rem 0;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .modal-content {
+        flex-direction: column-reverse;
+    }
+}
