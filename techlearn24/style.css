@@ -69,7 +69,8 @@ body, html {
     position: relative;
     cursor: pointer;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 .card-gradient {
     position: absolute;
@@ -138,7 +139,8 @@ body, html {
 .modal-image {
     flex: 1;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
+    background-repeat: no-repeat;
     mask-image: linear-gradient(to right, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
 }
 .modal-text {
