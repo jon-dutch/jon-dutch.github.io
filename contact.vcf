@@ -4,7 +4,7 @@ EMAIL;type=WORK:John.Holland@newyork.msf.org
 TEL;type=WORK:+1 (646) 215-7038
 KIND:individual
 NOTE:L&D professional with Doctors Without Borders
-ORG:MSF;Doctors Without Borders;PMU
+ORG:Doctors Without Borders
 ROLE:Learning Officer
 TITLE:Learning Officer
 SOURCE:https://www.jon-dutch.com/contact.vcf
@@ -13,7 +13,7 @@ CATEGORIES:L&D,MSF,Doctors_Without_Borders
 PHOTO;JPEG:https://raw.githubusercontent.com/jon-dutch/jon-dutch.github.io/f91dbe0753bf464d1ea738ecad0e05682c898d26/images/me-web.svg
 LOGO;JPEG:https://www.doctorswithoutborders.org/themes/custom/msf/logo.svg
 TZ:America/New_York
-URL:https://www.jon-dutch.com
+URL:https://www.doctorswithoutborders.org
 FN:John Holland
 N:Holland;John;;;;
 END:VCARD
