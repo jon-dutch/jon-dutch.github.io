@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Minute Expert</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 0 20px;
+        }
+        
+        .title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .topic-section {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .topic-text {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+        
+        .generate-btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 2rem;
+        }
+        
+        .generate-btn:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .instructions {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            display: none;
+        }
+        
+        .instructions h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #ffeb3b;
+        }
+        
+        .instructions p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0.5rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            .topic-text {
+                font-size: 1.2rem;
+            }
+            
+            .generate-btn {
+                padding: 12px 30px;
+                font-size: 1.1rem;
+            }
+            
+            .instructions h3 {
+                font-size: 1.5rem;
+            }
+            
+            .instructions p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .title {
+                font-size: 2rem;
+            }
+            
+            .topic-section, .instructions {
+                padding: 1.5rem;
+            }
+            
+            .topic-text {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">One Minute Expert</div>
+        
+        <div class="topic-section">
+            <div class="topic-text" id="topicText">Are you ready to become an expert?</div>
+        </div>
+        
+        <button class="generate-btn" id="generateBtn">Generate</button>
+        
+        <div class="instructions" id="instructions">
+            <h3>Instructions</h3>
+            <p>Are you ready to WoW us with your expertise?</p>
+            <p>You have 30-60 seconds to convince us you're an expert on the above topic.</p>
+            <p><strong>Be confident.</strong></p>
+            <p><strong>Cite sources</strong> (fictitious or otherwise).</p>
+            <p><strong>Be ready for questions.</strong></p>
+            <p>You've got this!</p>
+            <p>...or you don't. I suppose we will find out shortly!</p>
+        </div>
+    </div>
+
+    <script>
+        const topics = [
+            "The ergonomic benefits of eating cereal with a fork",
+            "Why brushing your teeth with your non-dominant hand improves creativity",
+            "The optimal angle for holding your coffee mug to maximize productivity",
+            "How wearing socks on your hands prevents decision fatigue",
+            "The scientific method for organizing your desk by color temperature",
+            "Why walking backwards to the bathroom increases focus",
+            "The psychology of only using pens that match your outfit",
+            "How blinking in morse code reduces email stress",
+            "The proper technique for high-fiving your reflection for confidence",
+            "Why eating lunch in alphabetical order boosts memory",
+            "The aerodynamics of paper airplane filing systems",
+            "How humming while typing increases accuracy by 47%",
+            "The feng shui of positioning your keyboard for maximum luck",
+            "Why scheduling meetings only on days ending in 'y' saves time",
+            "The biomechanics of standing on one foot during phone calls",
+            "How naming your stapler improves office relationships",
+            "The therapeutic benefits of organizing your inbox by font size",
+            "Why drinking water only from blue containers enhances intelligence",
+            "The proper etiquette for nodding at houseplants to reduce stress",
+            "How rotating your chair three times before sitting prevents burnout",
+            "The strategic advantages of wearing your watch upside down",
+            "Why counting ceiling tiles during breaks improves problem-solving",
+            "The optimal temperature for keeping your mousepad happy",
+            "How practicing presentations to your pet goldfish reduces anxiety",
+            "The ancient art of folding sticky notes into origami for better time management",
+            "Why drinking hot water before cold water makes you smarter",
+            "The best way to arrange your shoes to bring good luck",
+            "How counting to ten in different languages improves concentration",
+            "Why eating rice with a spoon held in your left hand saves time",
+            "The proper method for greeting your pillow before sleep for better dreams",
+            "How clapping your hands exactly five times before work increases energy",
+            "Why keeping a small stone in your pocket prevents bad decisions",
+            "The scientific benefits of smiling at your food before eating",
+            "How washing your face with warm water in circles (not straight lines) improves thinking",
+            "Why sitting on the floor for exactly three minutes daily reduces worry"
+        ];
+
+        $(document).ready(function() {
+            $('#generateBtn').click(function() {
+                // Get random topic
+                const randomIndex = Math.floor(Math.random() * topics.length);
+                const randomTopic = topics[randomIndex];
+                
+                // Update topic text with animation
+                $('#topicText').fadeOut(200, function() {
+                    $(this).text(randomTopic).fadeIn(200);
+                });
+                
+                // Show instructions
+                $('#instructions').slideDown(300);
+            });
+        });
+    </script>
+</body>
+</html>
